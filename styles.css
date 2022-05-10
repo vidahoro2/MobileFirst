@@ -1,0 +1,104 @@
+/*
+1. Posicionamiento
+2. Modelo de Caja(Box Model) 
+3.Tipografia
+4.Visuales
+5.Otros
+
+*/
+:root{
+    /* Colores*/
+    --Bitcoin-orange:#F7931A ;
+    --Soft-orange:#FFE9D4;
+    --Secondary-blue:#1A9AF7;
+    --Soft-blue:#E7F5FF;
+    --Warm-black:#201E1C;
+    --Warm-black-1:#282623;
+    --Gray:#BABABA;
+    --Off-white:#FAF8F7;
+    --Just-white:#FFFFFF;
+
+    ;
+
+}
+
+*{
+    box-sizing: border-box;;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans',sans-serif;
+}
+
+@media(max-width:320px){
+
+    header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        min-width: 32rem;
+        height: 33.4rem;
+        text-align: center;
+        align-content: space-around;
+        background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+
+    }
+    header .header--logo  img{
+        width: 15rem;
+        height: 2.4rem;
+        margin-top: 6rem;
+    }
+
+    .header--title{
+        width: 90%;
+        min-width: 28.8rem;
+        max-width: 90rem;
+        height: 21.8rem;
+        margin-top: 4rem;
+        color: var(--Just-white);
+        font-size: 1.8rem;
+        align-self: center;
+        font-weight: bold;
+        line-height: 2.6rem;
+    }
+
+    .header--description{
+        font-size: 1.5rem;
+        color: var(--Just-white);
+        margin-bottom: 6rem;
+    }
+    .header--button {
+        position: absolute;
+        left: calc(50% - 118px);
+        top:27rem;
+        display: block;
+        margin-top: 3.5rem;
+        padding: 1.5rem;
+        width: 22.9rem;
+        height: 4.8rem;
+        background-color: var(--Off-white);
+        /* Sombra */
+        box-shadow: 0px 4px 8px rgb(89, 73, 30, 16);
+        border: none;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+
+    }
+    .header--button span{
+        display: inline-block;
+        width: 1.3rem;
+        height: 0.8rem;
+        margin-left: 1rem;
+        background-image: url(./assets/icons/down-arrow.svg);
+    }
+
+}

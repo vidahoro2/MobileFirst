@@ -147,20 +147,21 @@ html{
     }
 
     .main-coins-table{
-     width: 70%;
-     min-width: 23.5rem;
-     max-width: 50rem;
-     height: 36rem;
-     margin: 0 auto;
-     font-family: 'Inter', sans-serif;
+        width: 70%;
+        min-width: 23.5rem;
+        max-width: 50rem;
+        height: 36rem;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
     }
     .coin-table--title{
         font-family: 'DM Sans';
         color: var(--Bitcoin-orange);
         font-size: 1.8rem;
-        text-align:left;
+        text-align:justify;
         font-weight: bold;
         line-height: 1.8rem;
+        margin-bottom: 0.5rem;
     }
     .coins-table--container{
         width: 90%;
@@ -240,5 +241,82 @@ html{
         background-repeat: no-repeat;
 
     }
+
+    .main-fees-table{
+        width: 70%;
+        min-width: 23.5rem;
+        max-width: 50rem;
+        height: 36rem;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+    }
+    .fees-table--title{
+        color: var(--Secondary-blue);
+        font-size: 1.8rem;
+        text-align:left;
+        font-weight: bold;
+        line-height: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .fees-table--container{
+        width: 90%;
+        min-width:23rem ;
+        max-width: 30rem;
+        height: 25rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(4,25%);
+        grid-auto-flow: column;
+        font-family: 'Inter', sans-serif ;
+        font-size: 1.6rem;
+        border-radius: 1.5rem ;
+        background:var(--Just-white) ;
+
+    }
+    .fees-table--container div{
+        display: flex;
+        border: 1px solid #FAF8F7;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fees-table--container .Name{
+        color: #B5B0AC;
+    }
+
+    .fees-table--container .number{
+        color: #757575;
+    }
+
+    .fees-table--date {
+        color: var(--Warm-black-1);
+        margin: 1rem auto ;
+        display: flex;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: var(--Soft-blue) ;
+        border-radius: 1.5rem;
+        height: 4rem;
+        width: 18rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .fees-table--date  p{
+        font-size: 1.2rem;
+    }
+    .table-go-right{
+        position: absolute;
+        right: -4rem;
+        padding: 1.5rem;
+        top: calc(50%-2rem);
+    }
+    .table-go-left{
+        right: auto;
+        left: -4rem;
+    }
+
 
 }

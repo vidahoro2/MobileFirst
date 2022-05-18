@@ -112,6 +112,8 @@ html{
         padding-top: 8rem;
         padding-bottom: 3rem;
         text-align: center;
+        
+        
 
     }
     .backgroung-img{
@@ -161,7 +163,8 @@ html{
         text-align:justify;
         font-weight: bold;
         line-height: 1.8rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
     }
     .coins-table--container{
         width: 90%;
@@ -179,7 +182,7 @@ html{
     .coins-table--container td{
         width: 50%;
         font-size: 1.6rem;
-        font-weight: 50rem;
+        font-weight: 5rem;
         line-height: 1.9rem;
         color: var(--Gray);
         background-color: var(--Just-white);
@@ -256,7 +259,8 @@ html{
         text-align:left;
         font-weight: bold;
         line-height: 1.8rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
     }
     .fees-table--container{
         width: 90%;
@@ -307,16 +311,122 @@ html{
     .fees-table--date  p{
         font-size: 1.2rem;
     }
-    .table-go-right{
-        position: absolute;
-        right: -4rem;
-        padding: 1.5rem;
-        top: calc(50%-2rem);
+
+    .main-product-detail{
+        width: 100%;
+        height: auto;
+        background: var(--Warm-black);
+        position: relative;
+        padding: 2rem 1rem;
     }
-    .table-go-left{
-        right: auto;
-        left: -4rem;
+    .product-detail--batata-logo{
+        position: absolute;
+        width: 4rem;
+        height: 2.5rem;
+        background-image: url(assets/icons/batata.svg);
+        top: -1.3rem;
+        right: calc(50% - 2rem);
+    }
+    .product-detail--title{
+        width: 90%;
+        min-width: 28.8rem;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 5rem;
+        text-align: center;
+
+    }
+    .product-detail--title h2{
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: var(--Just-white);
+    }
+    .product-detail--title p{
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: #808080;
+    }
+    .product-cards--container{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+
     }
 
+    .product-detail--card{
+        background: var(--Warm-black-1);
+        border-radius: 0.4rem;
+        width: 100%;
+        height: 15.2rem ;
+        padding: 1.5rem 2rem;
+        position: relative;
+        margin-top: 2rem;
+
+    }
+    .clock{
+        background-image: url(assets/icons/clock.svg);
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+
+
+    }
+    .product--card-title{
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 4.8rem;
+        font-family: 'DM Sans';
+        color: var(--Just-white);
+
+    }
+    .product--card-body{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #808080;
+
+    }
+
+    .eye{
+        background-image: url(assets/icons/eye.svg);
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+    }
+    .Pesos{
+        background-image: url(assets/icons/dollar-sign.svg);
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+    }
+    .check{
+        background-image: url(assets/icons/check-circle.svg);
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        object-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+    }
 
 }

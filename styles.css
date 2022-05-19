@@ -428,5 +428,21 @@ html{
         background-size: cover;
         display: inline-block;
     }
+    .bitcoin-img-container{
+        width: 100%;
+        min-width: 32rem;
+        height: 50vh;
+        background-image: url(assets/img/bitcoinbaby2x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .bitcoin-img-container h2{
+        font-size: 2.4rem;
+        padding-top: 6rem;
+        line-height: 2.6rem;
+        color: var(--Off-white);
+    }
 
 }

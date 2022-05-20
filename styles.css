@@ -108,12 +108,10 @@ html{
     }
     .main-exchange-container{
         width: 100%;
-        height: auto;
+        height: 86remrem;
         padding-top: 8rem;
         padding-bottom: 3rem;
         text-align: center;
-        
-        
 
     }
     .backgroung-img{
@@ -147,9 +145,22 @@ html{
         font-weight: bold;
         margin-bottom: 4rem;
     }
+    .main-tables-container{
+        
+        display: flex;
+        height: 35rem;
+        overflow-x: scroll;
+        overscroll-behavior-x:contain ;
+        scroll-snap-type: x proximity;
 
+
+
+
+
+    }
     .main-coins-table{
         width: 70%;
+        scroll-snap-align:center;
         min-width: 23.5rem;
         max-width: 50rem;
         height: 36rem;
@@ -443,6 +454,143 @@ html{
         padding-top: 6rem;
         line-height: 2.6rem;
         color: var(--Off-white);
+    }
+    .main-plans-container{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        padding-bottom: 7rem;
+        text-align: center;
+
+
+    }
+    .plans-title{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .plans-title h2{
+        color: var(--Warm-black);
+        font-family: 'DM Sans';
+        font-size: 2.4rem;
+        line-height: 122%;
+        text-align: center;
+
+    }
+    .plans-title p{
+        font-family: 'DM Sans';
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        color: #757575;
+        display: inline;
+        margin: 1rem 1rem 3rem 1rem;
+        text-align: center;
+
+    }
+    .plans-container--slider{
+
+        display: flex;
+        height: 31.6rem;
+        overflow-x: scroll;
+        overscroll-behavior-x:contain ;
+        scroll-snap-type: x proximity;
+
+    }
+
+    .plans-container--card{
+        position: relative;
+        scroll-snap-align:center;
+        width: 19rem;
+        height: 25rem;
+        background: white;
+        border-radius: 0.8rem;
+        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16) ;
+        margin: 5rem auto 0;
+        padding: 0 1.5rem;
+
+    }
+    .plans-contiainer--card--header{
+        position: absolute;
+        width: 10.1rem;
+        height: 3.1rem;
+        background: var(--Bitcoin-orange);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        color: white;
+        font-family: 'Inter';
+        left: calc(50% - 55px);
+        padding: 0.6rem;
+        margin-top: -13px;
+
+    }
+
+    .plan-card-title{
+        font-size: 1.6rem;
+        padding-top: 3rem;
+        margin-bottom: 0.5rem;
+        color: black;
+        line-height: 1.8rem;
+        font-weight: 500;
+
+    }
+
+    .plan-card-price{
+        font-weight: bold;
+        font-size: 5.2rem;
+        line-height: 5.3rem;
+        color: black;
+
+    }
+    .plan-card-price span{
+        font-size: 1.2rem;
+        font-weight: 300;
+        vertical-align: text-top;
+    }
+    .plan-card-saving{
+        font-size: 1.2rem;
+        color: #757575;
+        margin-bottom: 2rem;
+    }
+    .plan-card--ca{
+        border-radius: 4px;
+        border: 2px solid var(--Bitcoin-orange);
+        width: 15.8rem;
+        height: 4rem;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'DM Sans';
+        background: #faf8f7;
+
+    }
+    .plan-card--ca span{
+        background-image: url(assets/icons/orange-right-arrow.svg);
+        height: 17px;
+        width: 17px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        display: inline-block;
+        background-size: cover;
+        object-position: center center;
+        vertical-align: text-bottom;
+
+    }
+
+    footer{
+        width: 100%;
+        height: 15rem;
+        background-color: #F7931A;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .footer-text ul{
+        list-style: none;
+        color: var(--Just-white);
+        font-size: 1.4rem;
+        font-family: 'DM Sans';
     }
 
 }
